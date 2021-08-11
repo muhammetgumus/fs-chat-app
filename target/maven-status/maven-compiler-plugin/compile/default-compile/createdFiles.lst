@@ -1,0 +1,5 @@
+com\muhammetgumus\fschatapp\controller\ChatAppController$BaseResponse.class
+com\muhammetgumus\fschatapp\FsChatAppApplication.class
+com\muhammetgumus\fschatapp\model\ChatMessage.class
+com\muhammetgumus\fschatapp\configuration\WebSocketConfiguration.class
+com\muhammetgumus\fschatapp\controller\ChatAppController.class
