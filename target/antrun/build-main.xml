@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<project name="maven-antrun-" default="main"  >
-<target name="main">
-  <copy todir="C:\Users\lenovo\Desktop\fs-chat-app\target/classes/public">
-    <fileset dir="C:\Users\lenovo\Desktop\fs-chat-app/frontend/build"/>
-  </copy>
-</target>
-</project>
