@@ -1,17 +1,15 @@
-import { useState, useEffect } from 'react';
-import doodleLogo from '../doodle.png'
 import hero from '../Hero.png';
-//var doodleLogo = require("../doodle.png")
-var service = require('../service/service')
-const LoginScreen = () => {
-    const [userName, setUserName] = useState("")
 
+const LoginScreen = ({setIsLogged,userName,setUserName}) => {
+    
     const handleChangeInput = (event) => {
         setUserName(event.target.value)
     }
 
     const handleJoin = () => {
-        service.handleChatJoin(userName)
+        if(userName.length>0){  
+            setIsLogged(true)
+        }
     }
 
     return (

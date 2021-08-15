@@ -1,15 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-import {useState,useEffect } from 'react';
+import {useState} from 'react';
 import LoginScreen from './components/LoginScreen';
+import ChatRoom from './components/ChatRoom';
 
 function App() {
-  const [data,setData]= useState(null);
-
+  const [isLogged ,setIsLogged] = useState(false);
+  const [userName, setUserName] = useState("")
   return (
     <div className="App">
         <div>
-            <LoginScreen/>
+            {!isLogged && <LoginScreen  userName={userName} setUserName={setUserName} setIsLogged={setIsLogged} />}
+            {isLogged && <ChatRoom userName={userName}/>}
         </div>
     </div>
   );

@@ -13,7 +13,8 @@ public class ChatAppController {
     @MessageMapping("/chat.sendMessage")
     @SendTo("/chatTopic/general")
     public ChatMessage sendMessage(@RequestBody ChatMessage incomingMessage ){
-            return incomingMessage;
+        System.out.println(incomingMessage.toString());
+        return incomingMessage;
     }
 
     @MessageMapping("/chat.addNewUser")

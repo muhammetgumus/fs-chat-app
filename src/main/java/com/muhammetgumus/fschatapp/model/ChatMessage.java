@@ -7,5 +7,6 @@ public class ChatMessage {
 
     String content;
     String messageOwner;
+    String date;
 
 }
